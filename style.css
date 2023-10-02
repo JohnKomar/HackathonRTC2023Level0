@@ -1,0 +1,104 @@
+/* App.css */
+.App {
+  background-color: red; /* Red background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.title-overlay {
+  position: relative;
+}
+
+.title {
+  color: white; /* Text color */
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Title shadow */
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.project-description {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+.description-text {
+  font-size: 18px;
+  color: black;
+}
+
+.options-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.options-button {
+  background-color: #007bff; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options-button:hover {
+  background-color: #0056b3; /* Hover color */
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.option {
+  margin: 10px;
+  background-color: #28a745; /* Option button background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #1e7e34; /* Hover color */
+}
+
+.footer {
+  background-color: #333; /* Bottom bar background color */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-bar {
+  display: flex;
+}
+
+.bottom-button {
+  background-color: #333; /* Button background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bottom-button:hover {
+  background-color: #555; /* Hover color */
+}

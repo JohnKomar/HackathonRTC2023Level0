@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency - Study Connect</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        .top-header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2ecc71;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #27ae60;
+        }
+
+        /* Discussion Styles */
+        .discussion {
+            padding: 20px;
+        }
+
+        .discussion h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .discussion h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .separator {
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        /* Chatbox Styles */
+        .chatbox {
+            margin-top: 20px;
+        }
+
+        .chatbox input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .chat-message {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        
+        /* Emergency-specific Styles */
+        .emergency-info {
+            background-color: #ff5733; /* Dark orange-red background */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .emergency-info h2 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .emergency-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <h1>Study Connect</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="messages.html">Messages</a>
+        <a href="ranking.html">Ranking</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <section class="emergency-info">
+        <h2>Emergency Assistance</h2>
+        <p>If you are facing an emergency situation, please contact the authorities immediately.</p>
+    </section>
+
+    <section class="discussion">
+        <h2>Emergency Discussion</h2>
+        <h3>Emergency - Call for Help</h3>
+        <div class="separator"></div>
+        <p>If you are in immediate danger or need urgent assistance, please dial your local emergency number (e.g., 911).</p>
+
+        <div class="chatbox">
+            <input type="text" id="chat-input" onkeypress="handleKeyPress(event)" placeholder="Type your message...">
+        </div>
+
+        <div id="chat-area"></div>
+    </section>
+
+    <script>
+        function sendMessage() {
+            var inputField = document.getElementById("chat-input");
+            var message = inputField.value.trim();
+
+            if (message !== "") {
+                var messageElement = document.createElement("div");
+                messageElement.className = "chat-message";
+                messageElement.textContent = message;
+
+                var chatArea = document.getElementById("chat-area");
+                chatArea.appendChild(messageElement);
+
+                inputField.value = "";
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                sendMessage();
+            }
+        }
+    </script>
+</body>
+</html>

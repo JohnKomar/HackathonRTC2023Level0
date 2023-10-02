@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Connect</title>
+    <style>
+        /* Styles for the top header */
+        .top-header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styles for the introduction section */
+        .introduction {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styles for the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2ecc71;
+            padding: 10px 0;
+        }
+
+        /* Style for navigation buttons */
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <h1>Study Connect</h1>
+    </header>
+
+    <section class="introduction">
+        <p>Connecting professors with students and enabling students to connect with each other for academic support.</p>
+    </section>
+
+    <nav class="navbar">
+    <a href="message.html">Message</a>
+    <a href="video.html">Video</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="settings.html">Settings</a>
+    </nav>
+</body>
+</html>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Settings Page</h1>
+    </header>
+
+    <div class="settings-container">
+        <!-- Add your settings options here -->
+        <h2>General Settings</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        
+        <h2>Privacy Settings</h2>
+        <label for="privacy">Privacy Level:</label>
+        <select id="privacy" name="privacy">
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+        </select>
+
+        <button type="submit">Save Settings</button>
+    </div>
+</body>
+</html>

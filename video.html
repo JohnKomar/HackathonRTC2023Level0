@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video - Study Connect</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        .top-header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2ecc71;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #27ae60;
+        }
+
+        /* Video Container Styles */
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Video Row Styles */
+        .video-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        /* Video Preview Styles */
+        .video-preview {
+            background-color: #f2f2f2;
+            width: 320px; /* Set the desired width */
+            height: 180px; /* Set the desired height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .video-preview img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .video-subtitle {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <h1>Study Connect</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="messages.html">Messages</a>
+        <a href="ranking.html">Ranking</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <section class="video-container">
+        <div class="video-row">
+            <!-- Video 1 -->
+            <div class="video-preview" onclick="openVideo()">
+                <img src="walter.jpg" alt="Video Thumbnail 1">
+                <div class="video-subtitle">
+                    John Doe - Mathematics
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-preview" onclick="openVideo()">
+                <img src="girl.jpg" alt="Video Thumbnail 2">
+                <div class="video-subtitle">
+                    Jane Smith - Physics
+                </div>
+            </div>
+        </div>
+
+        <div class="video-row">
+            <!-- Video 3 -->
+            <div class="video-preview" onclick="openVideo()">
+                <img src="girl2.jpg" alt="Video Thumbnail 3">
+                <div class="video-subtitle">
+                    Mark Johnson - Chemistry
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-preview" onclick="openVideo()">
+                <img src="guy.jpg" alt="Video Thumbnail 4">
+                <div class="video-subtitle">
+                    Emily Davis - Biology
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript function to handle video opening
+        function openVideo() {
+            // Add your code here to open the video when a preview is clicked.
+          window.location.href = "https://meet.livekit.io/";
+        }
+    </script>
+</body>
+</html>

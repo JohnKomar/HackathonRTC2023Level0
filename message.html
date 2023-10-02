@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forums - Study Connect</title>
+
+    <!-- Importing Comic Neue font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Settings */
+        body {
+            font-family: 'Comic Neue', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* Styles for the top header */
+        .top-header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            border-bottom: 5px solid #2980b9;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Styles for the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #2ecc71;
+            padding: 15px 0;
+            border-radius: 5px;
+            margin: 20px 10%;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for navigation buttons */
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #27ae60;
+            transform: scale(1.1);
+        }
+
+        /* Styles for the forum section */
+        .forums {
+            padding: 40px 10%;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .forum-topic {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .forum-topic:hover {
+            background-color: #f9f9f9;
+        }
+
+        .forum-title {
+            font-size: 1.5em;
+            margin: 0;
+            margin-bottom: 10px;
+            cursor: pointer; /* Add cursor pointer for clickable effect */
+        }
+
+        .forum-title a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .forum-title a:hover {
+            color: darkred;
+        }
+
+        .forum-subject {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-header">
+        <h1>Study Connect</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="video.html">Video</a>
+        <a href="ranking.html">Ranking</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <section class="forums">
+        <h2>Forums</h2>
+
+        <!-- Clickable titles linked to discussion pages -->
+        <div class="forum-topic">
+            <h3 class="forum-title"><a href="emergency.html">Emergency</a></h3>
+            <p class="forum-subject">Need Sudden Help? Contact the chatbox to talk to police.</p>
+        </div>
+
+        <div class="forum-topic">
+            <h3 class="forum-title"><a href="discussion1.html">Mathematics - How do you inverse a Matrix?</a></h3>
+            <p class="forum-subject">I'm having trouble understanding matrix inversion. Can someone please explain it?</p>
+        </div>
+
+        <div class="forum-topic">
+            <h3 class="forum-title"><a href="discussion2.html">Physics - Newton's?</a></h3>
+            <p class="forum-subject">I'm having trouble remembering the 3 laws of motion. Can someone please explain it?</p>
+        </div>

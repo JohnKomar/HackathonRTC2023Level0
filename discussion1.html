@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion 1 - Study Connect</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styles */
+    .top-header {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Navigation Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: #2ecc71;
+      padding: 10px 0;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #27ae60;
+    }
+
+    /* Discussion Styles */
+    .discussion {
+      padding: 20px;
+    }
+
+    .discussion h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .discussion h3 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .separator {
+      border-top: 1px solid #ccc;
+      margin: 10px 0;
+    }
+
+    /* Chatbox Styles */
+    .chatbox {
+      margin-top: 20px;
+    }
+
+    .chatbox input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .chat-message {
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="top-header">
+    <h1>Study Connect</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="video.html">Video</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+
+  <!-- Discussion Content -->
+  <section class="discussion">
+    <h2>Discussion 1</h2>
+    <h3>Mathematics - How do you inverse a Matrix?</h3>
+    <div class="separator"></div>
+    <p>I'm having trouble understanding matrix inversion. Can someone please explain it?</p>
+
+    
+      <!-- Chatbox -->
+    <div class="chatbox">
+      <input type="text" id="chat-input" onkeypress="handleKeyPress(event)" placeholder="Type your message...">
+    </div>
+
+    <div id="chat-area"></div>
+  </section>
+  <script>console.log("Hello");</script>
+
+  <!-- JavaScript for Chatbox -->
+  <script src="usingWebSocket.js"></script>
+  <script>
+    console.log("heelloo")
+    function sendMessage() {
+      var inputField = document.getElementById("chat-input");
+      var message = inputField.value.trim();
+
+      if (message !== "") {
+        // Send the message through the WebSocketClient here
+        // Example: webSocketClient.sendMessage(message);
+
+        // Display the sent message in the chat area
+        var messageElement = document.createElement("div");
+        messageElement.className = "chat-message";
+        messageElement.textContent = message;
+
+        var chatArea = document.getElementById("chat-area");
+        chatArea.appendChild(messageElement);
+
+        inputField.value = "";
+      }
+    }
+
+    function handleKeyPress(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        sendMessage();
+      }
+    }
+  </script>
+</body>
+
+</html>

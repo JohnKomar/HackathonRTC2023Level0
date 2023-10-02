@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking - Study Connect</title>
+    <style>
+        /* Styles for the top header */
+        .top-header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styles for the ranking section */
+        .ranking {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .profile-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two rankings per row */
+            gap: 20px; /* Gap between rankings */
+            list-style: none;
+            padding: 0;
+        }
+
+        .profile-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; /* Border around each profile */
+            padding: 10px;
+        }
+
+        .profile-picture {
+            flex: 0 0 100px;
+            margin-right: 20px;
+        }
+
+        .profile-picture img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info p {
+            margin: 0;
+        }
+
+        .ranking-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        /* Styles for the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2ecc71;
+            padding: 10px 0;
+        }
+
+        /* Style for navigation buttons */
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <h1>Study Connect</h1>
+    </header>
+
+  <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="messages.html">Messages</a>
+        <a href="Video.html">Video</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+  
+    <section class="ranking">
+        <h2>Screenwise Ranking</h2>
+        <ul class="profile-list">
+            <li class="profile-item">
+                <span class="ranking-number">1</span>
+                <div class="profile-picture">
+                    <img src="walter.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <p>Name: John Doe</p>
+                    <p>Subject: Computer Science</p>
+                    <p>Hours: 45</p>
+                </div>
+            </li>
+
+            <li class="profile-item">
+                <span class="ranking-number">2</span>
+                <div class="profile-picture">
+                    <img src="girl.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <p>Name: Jane Smith</p>
+                    <p>Subject: Science</p>
+                    <p>Hours: 25</p>
+                </div>
+            </li>
+
+            <!-- Add more profiles as needed, up to rank 10 -->
+            <!-- For example: -->
+            <li class="profile-item">
+                <span class="ranking-number">3</span>
+                <div class="profile-picture">
+                    <img src="girl2.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <p>Name: Emma Johnson</p>
+                    <p>Subject: History</p>
+                    <p>Hours: 15</p>
+                </div>
+            </li>
+
+            <li class="profile-item">
+                <span class="ranking-number">4</span>
+                <div class="profile-picture">
+                    <img src="guy.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <p>Name: Mark Johnson</p>
+                    <p>Subject: Computer Science</p>
+                    <p>Hours: 10</p>
+                </div>
+            </li>
+            <!-- Add more profiles for ranks 4-10 similarly -->
+
+        </ul>
+    </section>
+
+</body>
+</html>
